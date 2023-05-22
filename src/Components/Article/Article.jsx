@@ -1,10 +1,10 @@
 
 const Article = ({ title ,text ,tags ,image,alt}) => {
-    return <div className="p-5 bg-gray-200 dark:bg-dark-200 sm:rounded-xl gap-2 sm:shadow-md sm:grid-cols-2  lg:grid-cols-3 lg:max-w-[1000px]">
-<h3 className="text-xl text-alura-200 dark:text-gray-200 font-bold flex flex-col items-center ">{title}</h3>
+    return <div className="p-5 bg-gray-200 dark:bg-dark-200 sm:rounded-xl gap-2 sm:shadow-md sm:grid-cols-2  lg:grid-cols-3 lg:max-w-[1000px] sm:hover:shadow-gray-500 sm:hover:dark:shadow-black-400 sm:hover:shadow-lg">
+<h3 className="text-xl text-alura-200 dark:text-gray-200 font-bold flex flex-col items-center">{title}</h3>
 <div className="w-full flex-row   justify-end gap-2 pr-5  hidden sm:flex " >
 { 
-    tags.map(tag => <span key={tag} className="bg-alura-100 py-1  text-xs p-2 mt-2 rounded-full dark:bg-gray-400 font-bold uppercase">{tag}</span>)
+    tags.map(tag => <span key={tag} className="alura-tag">{tag}</span>)
 }
 
 </div>
